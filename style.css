@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+div.clockframe{
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background-color: cornflowerblue;
+    border-radius: 50%;
+    border: 8px solid cornflowerblue;
+}
+
+#time{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    text-align: center;
+    font-size: 23px;
+    font-family: sans-serif;
+    
+}
+.time1{
+    transform: rotate(30deg);
+
+}
+
+.time2{
+    transform: rotate(60deg);
+}
+.time3{
+    transform: rotate(90deg);
+}
+.time4{
+    transform: rotate(120deg);
+}
+.time5{
+    transform: rotate(150deg);
+}
+.time6{
+    transform: rotate(180deg);
+}
+.time7{
+    transform: rotate(210deg);
+}
+.time8{
+    transform: rotate(240deg);
+}
+.time9{
+    transform: rotate(270deg);
+}
+.time10{
+    transform: rotate(300deg);
+}
+.time11{
+    transform: rotate(330deg);
+}
+
+#second {
+    width: 2px;
+    height: 170px;
+    background-color: black;
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%) ;
+    transform-origin: bottom;
+    
+}
+
+#minute {
+    width: 3px;
+    height: 150px;
+    background-color: rgb(54, 81, 134);
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%) ;
+    transform-origin: bottom;
+}
+#hour {
+    width: 5px;
+    height: 130px;
+    background-color: rgb(54, 81, 134);
+    position: absolute;
+    bottom: 50%;
+    left: 50%;
+    transform: translate(-50%) ;
+    transform-origin: bottom;
+    
+}
