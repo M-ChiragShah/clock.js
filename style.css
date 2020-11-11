@@ -1,8 +1,9 @@
-* {
-    margin: 0;
-    padding: 0;
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
+body{
+    background-color: rgb(27, 47, 83);
+}
 div.clockframe{
     width: 400px;
     height: 400px;
@@ -13,6 +14,7 @@ div.clockframe{
     background-color: cornflowerblue;
     border-radius: 50%;
     border: 8px solid cornflowerblue;
+    box-shadow: 1px 20px 20px 0px rgb(12, 26, 53);
 }
 
 #time{
@@ -22,43 +24,54 @@ div.clockframe{
     top: 0%;
     text-align: center;
     font-size: 23px;
-    font-family: sans-serif;
+    font-family: Poppins,sans-serif;
     
 }
 .time1{
     transform: rotate(30deg);
+    font-size: 19px;
 
 }
 
 .time2{
     transform: rotate(60deg);
+    font-size: 19px;
 }
 .time3{
     transform: rotate(90deg);
+    font-size: 19px;
 }
 .time4{
     transform: rotate(120deg);
+    font-size: 19px;
 }
 .time5{
     transform: rotate(150deg);
+    font-size: 19px;
 }
 .time6{
     transform: rotate(180deg);
+    font-size: 19px;
 }
 .time7{
     transform: rotate(210deg);
+    font-size: 19px;
 }
 .time8{
     transform: rotate(240deg);
+    font-size: 19px;
 }
 .time9{
     transform: rotate(270deg);
+    font-size: 19px;
 }
 .time10{
     transform: rotate(300deg);
+    font-size: 19px;
 }
 .time11{
     transform: rotate(330deg);
+    font-size: 19px;
 }
 
 #second {
@@ -70,7 +83,7 @@ div.clockframe{
     left: 50%;
     transform: translate(-50%) ;
     transform-origin: bottom;
-    
+    z-index: -1;
 }
 
 #minute {
@@ -82,6 +95,8 @@ div.clockframe{
     left: 50%;
     transform: translate(-50%) ;
     transform-origin: bottom;
+    z-index: -1;
+    border-radius: 15px;
 }
 #hour {
     width: 5px;
@@ -92,5 +107,53 @@ div.clockframe{
     left: 50%;
     transform: translate(-50%) ;
     transform-origin: bottom;
+    z-index: -1;
+    border-radius: 15px;
     
+}
+div.center {
+    height: 15px;
+    width: 15px;
+    background-color: rgb(35, 61, 110);
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%)translateY(-50%);
+}
+
+@media screen and (max-width: 480px){
+    div.clockframe{
+        width: 300px;
+        height: 300px;
+    }
+
+    #hour{
+        height:75px;
+
+    }
+
+    #minute{
+        height: 110px;
+
+    }
+
+    #second{
+        height: 125px;
+    }
+
+}
+
+
+p#text{
+    position: absolute;
+    top: 65%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-family:Lato,sans-serif ;
+    letter-spacing: 2px;
+    border-radius: 4px;
+    background-color: rgba(43, 70, 119, 0);
+    font-weight: 600;
+    color: rgba(46, 73, 122, 0.719);
 }
